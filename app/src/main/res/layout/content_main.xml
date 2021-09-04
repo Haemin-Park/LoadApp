@@ -35,7 +35,7 @@
                 android:id="@+id/radioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="20dp"
+                android:padding="10dp"
                 android:text="@string/glide"
                 android:textSize="20dp" />
 
@@ -43,7 +43,7 @@
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="20dp"
+                android:padding="10dp"
                 android:text="@string/load_app"
                 android:textSize="20dp" />
 
@@ -51,7 +51,7 @@
                 android:id="@+id/radioButton3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="20dp"
+                android:padding="10dp"
                 android:text="@string/retrofit"
                 android:textSize="20dp" />
         </RadioGroup>
