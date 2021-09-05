@@ -5,6 +5,12 @@
 
     <data>
 
+        <import type="com.example.loadapp.Item" />
+
+        <variable
+            name="vm"
+            type="com.example.loadapp.MainViewModel" />
+
     </data>
 
     <LinearLayout
@@ -32,25 +38,25 @@
             android:padding="20dp">
 
             <RadioButton
-                android:id="@+id/radioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="@{()->vm.selectItem(Item.GLIDE)}"
                 android:padding="10dp"
                 android:text="@string/glide"
                 android:textSize="20dp" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="@{()->vm.selectItem(Item.UDACITY)}"
                 android:padding="10dp"
-                android:text="@string/load_app"
+                android:text="@string/udacity"
                 android:textSize="20dp" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="@{()->vm.selectItem(Item.RETROFIT)}"
                 android:padding="10dp"
                 android:text="@string/retrofit"
                 android:textSize="20dp" />
@@ -62,6 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_margin="20dp"
+            android:onClick="@{()->vm.download()}"
             app:initBackgroundColor="@color/pink"
             app:progressColor="@color/purple" />
 
